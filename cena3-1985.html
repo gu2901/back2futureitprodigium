@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back2Future - It Prodigium</title>
+</head>
+<body>
+    
+
+<div class="home">
+ <div class="cena_1955">
+        <h1>
+            Conheca os personagens
+        </h1>
+       
+        <div class="card">
+            <div class="avatar" id="marty"></div>
+            
+            <div class="tooltip"><h2 class="nomePersonagem">Marty McFly</h2>
+    <span class="tooltiptext">Tooltip te ebsyjgrjsydb fubeswubewfsfn kjfew iuewiuf nwefnwise fuiw efn
+        enfj sen
+        
+        efdnsefin
+        efjseifn ek vnwiuruwi efbiwefwebiubwseb fibia bwifiw suebnf iswef
+        efknsefn
+        xt</span>
+    </div>
+</div>
+
+
+        <div class="card">
+            <div class="avatar" id="george"></div>
+            <div class="tooltip"><h2 class="nomePersonagem">George McFly</h2>
+            <span class="tooltiptext">Tooltip te ebsyjgrjsydb fubeswubewfsfn kjfew iuewiuf nwefnwise fuiw efn</span>
+        </div>
+    </div>
+        <div class="card">
+            <div class="avatar" id="dremmett"></div>
+            <div class="tooltip"><h2 class="nomePersonagem">Dr Emmett</h2>
+                <span class="tooltiptext">Tooltip te ebsyjgrjsydb fubeswubewfsfn kjfew iuewiuf nwefnwise fuiw efn</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="avatar" id="biff"></div>
+            <div class="tooltip"><h2 class="nomePersonagem">Biff </h2>
+                <span class="tooltiptext">Tooltip te ebsyjgrjsydb fubeswubewfsfn kjfew iuewiuf nwefnwise fuiw efn</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="avatar" id="lorraine"></div>
+            <div class="tooltip"><h2 class="nomePersonagem">Lorraine McFly</h2>
+                <span class="tooltiptext">Tooltip te ebsyjgrjsydb fubeswubewfsfn kjfew iuewiuf nwefnwise fuiw efn</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="avatar" id="goldie"></div>
+            <div class="tooltip"><h2 class="nomePersonagem">Goldie Wilson</h2>
+                <span class="tooltiptext">Tooltip te ebsyjgrjsydb fubeswubewfsfn kjfew iuewiuf nwefnwise fuiw efn</span>
+            </div>
+        </div>
+
+        <div class="botao"><h2>Reiniciar!</h2></div>
+       
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+<script>
+       const ativarBtn = document.querySelector('.botao')
+        ativarBtn.onclick = function() {
+            location.href = "cena1-1985.html";
+            }
+</script>
+
+<style>
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nomePersonagem{
+        text-shadow: 0px 0px 5px white;
+    }
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    
+     #biff{
+        background-image: url('https://i.pinimg.com/originals/2e/bb/52/2ebb521a270bc386cb1ef2e5a264ad47.jpg');
+       
+    }
+     #dremmett{
+        background-image: url('https://static.onecms.io/wp-content/uploads/sites/13/2015/10/21/BackTTFuture_067Pyxurz.jpg');
+        background-position: bottom;
+    }
+     #lorraine{
+        background-position: bottom;
+        background-image: url('https://i.pinimg.com/originals/52/6d/f4/526df4022be0c35145495d359cd7fe6a.jpg');
+    }
+     #george{
+        background-image: url('georgemcfly1985.jpg');
+    }
+     #marty{
+        background-image: url('https://www.hypeness.com.br/1/2020/06/michael-j-fox.jpeg');
+    }
+     #goldie{
+        background-image: url('goldie2.jpg');
+    }
+    .avatar{
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        border-radius: 50%;
+        border: solid black 3px;
+        box-shadow: 1px 1px 1px black;
+    }
+    .botao{
+        position: absolute;
+        top: 500px;
+        display: flex;
+        margin-top: 40px;
+        background-color: rgb(231, 245, 36, 0.8);
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40%;
+        border: 3px solid black;
+        box-shadow: 0px 0px 80px 30px black;
+    }
+
+@font-face {
+  font-family: 'digital-7';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/orbitron/v16/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.home{
+    display: flex;
+    color: aliceblue;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.cena_1955{
+        background-image: url("19852.jpg");
+        background-size: cover;
+        background-position: top;
+        padding: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 700px;
+            justify-content: center;
+            align-items: stretch;
+            justify-content: space-around;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .cena_carro{
+            background-position: top;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    #caixaRelogio{
+        padding-top: 0px;
+    }
+
+    }
+</style>
+
